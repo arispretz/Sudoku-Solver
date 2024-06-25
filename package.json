@@ -1,34 +1,30 @@
 {
-  "name": "glitch-hello-node",
-  "version": "0.1.0",
-  "description": "A simple Node app built on fastify, instantly up and running. Built to be remixed on Glitch.com.",
-  "main": "server.js",
+  "name": "sudoku-solver",
+  "version": "2.0.0",
+  "description": "Quality Assurance 4: Sudoku Solver",
+  "main": "./src/views/index.html",
   "scripts": {
-    "start": "node server.js"
+    "start": "parcel ./src/views/index.html",
+    "build": "parcel build ./src/views/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0"
   },
   "dependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/register": "^7.24.6",
-    "body-parser": "^1.20.2",
-    "chai": "^4.4.1",
-    "chai-http": "^4.3.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.6.0",
-    "express": "^4.19.2",
+    "body-parser": "1.20.2",
+    "chai": "5.1.1",
+    "chai-http": "5.0.0",
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
     "jsdom": "^16.4.0",
     "mocha": "^8.4.0",
     "nodemon": "^2.0.4"
   },
-  "engines": {
-    "node": "14.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-node"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch"
-  ]
+  "keywords": ["css", "javascript"]
 }
